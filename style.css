@@ -1,0 +1,73 @@
+body{
+    background-image:url(https://preview.redd.it/a-look-at-the-tarot-room-v0-rpvdodwmsmrd1.jpg?width=640&crop=smart&auto=webp&s=24c1fb91ce93496fc0a847865d25fd5ce7b1c6e8);
+   background: no-repeat blur(5px);
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenido{
+    margin : 100px;
+  
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    margin-left:auto; 
+}
+
+.image-container {
+    position: relative; 
+    display: inline-block; 
+}
+
+.image-container img{
+    left: 18%;
+     display: block;
+     z-index: 1;
+     position: relative;
+     
+}
+
+.mensaje{
+    color:black;
+     position:absolute;
+    font-size: 24px;
+    font-weight: bold;
+    bottom: 200px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transform: translateX(-50%);
+    z-index: 2;
+    margin-left:52%;
+    top: 30%;
+}
+
+h1, h2{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    left:10%;
+}
+h1{
+     font-family: "BBH Sans Bartle";
+     text-align: center;
+}
+h2{
+    font-family: "Major Mono Display";
+}
+
+.boton{
+margin: auto;
+border-radius: 30px;
+padding: 10px 20px;
+margin-top: 20px;
+right: 50%;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+}
+.bola-cristal{
+   
+    margin-right:90%;
+}
+
+p{
+    font-family: "Michroma";
+}

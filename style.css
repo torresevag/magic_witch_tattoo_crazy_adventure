@@ -1,73 +1,90 @@
-body{
-    background-image:url(https://preview.redd.it/a-look-at-the-tarot-room-v0-rpvdodwmsmrd1.jpg?width=640&crop=smart&auto=webp&s=24c1fb91ce93496fc0a847865d25fd5ce7b1c6e8);
-   background: no-repeat blur(5px);
-    background-size: cover;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+:root {
+  --font-ligth-color: #eaeaea;
+  --font-dark-color: #2e1c2b;
+  --button-tittle-color: #893168;
+  --hover-actions-color: #4a1942;
+  --background-color: #0b060a;
+  --complement-decoration: #4417a6;
 }
 
-.contenido{
-    margin : 100px;
-  
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content:center;
-    margin-left:auto; 
+.form_body {
+  width: 100%;
+  height: 650px;
+  background-color: var(--background-color);
+  color: var(--font-ligth-color);
+  padding: 1%;
 }
 
-.image-container {
-    position: relative; 
-    display: inline-block; 
+.form_body .img {
+  width: 55%;
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
 }
 
-.image-container img{
-    left: 18%;
-     display: block;
-     z-index: 1;
-     position: relative;
-     
+form {
+  width: 45%;
+  padding: 1rem 3rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  p {
+    font-weight: 100;
+    padding-left: 0.5rem;
+  }
+
+  textarea {
+    width: 99%;
+    margin: 1rem 0.5%;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 0.3rem;
+    height: 150px;
+    resize: none;
+    border: 1px solid var(--font-ligth-color);
+  }
+
+  .send-form{
+    background-color: var(--button-tittle-color);
+    padding: .8rem;
+    border-radius: .3rem;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .send-form:hover{
+    background-color: var(--hover-actions-color);
+  }
 }
 
-.mensaje{
-    color:black;
-     position:absolute;
-    font-size: 24px;
-    font-weight: bold;
-    bottom: 200px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    transform: translateX(-50%);
-    z-index: 2;
-    margin-left:52%;
-    top: 30%;
+.information {
+  padding-top: 1.5rem;
+
+  .element {
+    width: 45%;
+
+    input {
+      width: 100%;
+      border: 1px solid var(--font-ligth-color);
+      outline: none;
+      margin-top: 0.7rem;
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.3rem;
+      font-size: .9rem;
+    }
+  }
 }
 
-h1, h2{
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    left:10%;
-}
-h1{
-     font-family: "BBH Sans Bartle";
-     text-align: center;
-}
-h2{
-    font-family: "Major Mono Display";
-}
 
-.boton{
-margin: auto;
-border-radius: 30px;
-padding: 10px 20px;
-margin-top: 20px;
-right: 50%;
-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 
-}
-.bola-cristal{
-   
-    margin-right:90%;
-}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 
-p{
-    font-family: "Michroma";
 }

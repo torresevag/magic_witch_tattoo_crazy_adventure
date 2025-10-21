@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=BBH+Sans+Bartle&family=Barrio&family=Borel&family=Delius+Swash+Caps&family=Fascinate+Inline&family=Honk&family=Major+Mono+Display&family=Manrope:wght@200..800&family=Michroma&family=Rubik+Bubbles&family=Yarndings+20&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
-    <div class="contenido">
-            <h1>BOLA DE CRISTAL</h1>
-            <h2> ¿Qué te depara el futuro? </h2>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
 
-            <div class="image-container">
-                <div class ="bola-cristal">
-                <img src="bola.png" alt="Imagen de fondo">
-                    <p class="mensaje">tu futuro.</p>
-              </div>
-              <button class="boton" type="button">Descubre tu futuro</button>
-            </div>
-    
-   
+    <!------------------------ FORM ---------------------->
+    <div class="flex justify-between form_body">
+      <div class="img">
+        <img src="images/form-pic.jpg" alt="studio image" />
+      </div>
 
-             
+      <form action="" class="flex flex-col justify-center">
+        <h1>WE GET WHAT YOU WANT!</h1>
+        <p>Fill the format to see our disgin.</p>
+
+        <div class="name_information information flex justify-between">
+          <div class="element">
+            <label for="firtNameInput">First name*</label>
+            <input
+              id="firtNameInput"
+              maxlength="100"
+              type="text"
+              placeholder="First name"
+            />
+          </div>
+          <div class="element">
+            <label for="lastNameInput">Last name*</label>
+            <input
+              id="lastNameInput"
+              maxlength="100"
+              type="text"
+              placeholder="Last name"
+            />
+          </div>
+        </div>
+
+        <div class="contact_information information flex justify-between">
+          <div class="element">
+            <label for="emailAddress">Email address*</label>
+            <input
+              id="emailAddress"
+              type="email"
+              placeholder="Emailaddress@example.com"
+            />
+          </div>
+          <div class="element">
+            <label for="phoneNumber">Phone number*</label>
+            <input id="phoneNumber" type="number" placeholder="Phone number" />
+          </div>
+        </div>
+
+        <textarea
+          name=""
+          id="optinal_text_input"
+          placeholder="Opcional text"
+        ></textarea>
+        <input
+          id="send_form_btn"
+          class="send-form"
+          type="submit"
+          value="SEND"
+        />
+      </form>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <!------------------------ FORM ---------------------->
+  </body>
 </html>

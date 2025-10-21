@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="main.js" defer></script>
-    
-</head>
-<body>
+  </head>
+  <body>
+    <main
+      class="main_carrusel flex flex-col items-center justify-center h-screen"
+    >
+      <div class="main_carrusel_info relative w-full max-w-4xl">
+        <h2>Welcome to the Witch Ink</h2>
+        <p>
+          A journey through enchanted inks and wild imagination. In this realm,
+          every tattoo tells a story whispered by ancient witches — symbols of
+          power, mystery, and transformation. Let your skin become the canvas of
+          a crazy, magical adventure. Dare to discover your next mark of
+          destiny...
+        </p>
+      </div>
 
-
-<main class="main_carrusel flex flex-col items-center justify-center h-screen">
-    <div class="main_carrusel_info relative w-full max-w-4xl">
-    <h2>Welcome to the Witch Ink</h2>
-    <p>A journey through enchanted inks and wild imagination.  
-        In this realm, every tattoo tells a story whispered by ancient witches —  
-        symbols of power, mystery, and transformation.  
-        Let your skin become the canvas of a crazy, magical adventure.  
-        Dare to discover your next mark of destiny... </p>
-    </div>
-    
-
-    <div class="main_carrusel_container relative w-full max-w-4xl overflow-hidden">
-        <div id="carrusel" class="flex transition-transform duration-100 ease-in-out">
-        <img src="imagenes/carrusel1.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel2.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel3.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel4.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel5.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel6.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel7.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel8.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
-        <img src="imagenes/carrusel9.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+      <div
+        class="main_carrusel_container relative w-full max-w-4xl overflow-hidden"
+      >
+        <div
+          id="carrusel"
+          class="flex transition-transform duration-100 ease-in-out"
+        >
+          <img
+            src="imagenes/carrusel1.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel2.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel3.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel4.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel5.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel6.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel7.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel8.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
+          <img
+            src="imagenes/carrusel9.jpg"
+            class="main_carrusel_img w-1/3 object-cover transition-all duration-700"
+          />
         </div>
-    </div>
-    <div id="particle-layer" class="particle-layer inset-0 pointer-events-none z-0 overflow-hidden"></div>
-</main>
+      </div>
+      <div
+        id="particle-layer"
+        class="particle-layer inset-0 pointer-events-none z-0 overflow-hidden"
+      ></div>
+    </main>
 
-
-
-<div class="parte-eva">
-    <div class="text-esfera-info relative w-full max-w-4xl">
+    <div class="parte-eva">
+      <div class="text-esfera-info relative w-full max-w-4xl">
         <h2>Destiny TATTOO</h2>
         <p>Don't know exactly what you want to get tattooed?</p>
-           <p> Leave it to fate... </p>
+        <p>Leave it to fate...</p>
+      </div>
+        <div class="sphere"><p id="tattoo" class="text-tat"></p></div>
+        <button id="generar" type="button" class="btn-discover">
+          Discover your Tattoo
+        </button>
+        <audio id="witch-sound" src="witch-noise.mp3" preload="auto"></audio>
     </div>
-        <div>
-            <div class="sphere"> <p id="tattoo" class="text-tat"></p></div>
-           <button id="generar" type="button" class="btn-discover">Discover your Tattoo</button>
-           <audio id="witch-sound" src="witch-noise.mp3" preload="auto"></audio>
-        </div>
-
-
-
-</div>
-
-</body>
+  </body>
 </html>

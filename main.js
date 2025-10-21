@@ -116,3 +116,45 @@ setInterval(updateCarrusel, 4000);
 
   window.addEventListener('resize',()=>{});
 })();
+
+
+//esfera flotante
+
+
+const BACKGROUND_LIST = ["🌿", "☁️", "🌊","🌋","🏔️","🌃", "Without Background"];
+const ELEMENT_LIST = ["🐍", "🌺", "🐲", "🦁", "🦄", "🪱","👽","🧜🏻‍♀️","🥇","🎸","👻","🧙🏽","🧩","🫀","👁️","🦷"];
+const STYLE_LIST= ["OLD SCHOOL", "FINE-LINE", "JAPANESSE", "REALISM"];
+const COLOR_LIST = ["Black/White", "Color", "Full Color"];
+const BODY_PART_LIST = ["💪🏻", "🦵🏻", "🤚🏻", "👅", "🍑","👂🏻","👃🏻","🦶🏻"];
+
+
+function getTattoo() {
+ 
+  const background = BACKGROUND_LIST[Math.floor(Math.random() * BACKGROUND_LIST.length)];
+  const element = ELEMENT_LIST[Math.floor(Math.random() * ELEMENT_LIST.length)];
+  const style = STYLE_LIST[Math.floor(Math.random() * STYLE_LIST.length)];
+  const color = COLOR_LIST[Math.floor(Math.random() * COLOR_LIST.length)];
+  const bodyPart = BODY_PART_LIST[Math.floor(Math.random() * BODY_PART_LIST.length)];
+
+  const tattoo = ` ${element} and ${background} With ${style} style ${color}  IN:${bodyPart}`;
+
+  document.getElementById("tattoo").textContent = tattoo;
+}
+
+document.getElementById("generar").addEventListener("click", getTattoo);
+
+
+
+//risa bruja
+
+const button = document.getElementById("generar");
+const audio = document.getElementById("witch-sound");
+
+button.addEventListener("click", () => {
+
+  audio.currentTime = 0; 
+  audio.play();
+
+
+  getTattoo();
+});

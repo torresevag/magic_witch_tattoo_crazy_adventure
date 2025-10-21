@@ -6,27 +6,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=BBH+Sans+Bartle&family=Barrio&family=Borel&family=Delius+Swash+Caps&family=Fascinate+Inline&family=Honk&family=Major+Mono+Display&family=Manrope:wght@200..800&family=Michroma&family=Rubik+Bubbles&family=Yarndings+20&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="main.js" defer></script>
+    
 </head>
 <body>
-    <div class="contenido">
-            <h1>BOLA DE CRISTAL</h1>
-            <h2> ¿Qué te depara el futuro? </h2>
 
-            <div class="image-container">
-                <div class ="bola-cristal">
-                <img src="bola.png" alt="Imagen de fondo">
-                    <p class="mensaje">tu futuro.</p>
-              </div>
-              <button class="boton" type="button">Descubre tu futuro</button>
-            </div>
-    
-   
 
-             
+<main class="main_carrusel flex flex-col items-center justify-center h-screen">
+    <div class="main_carrusel_info relative w-full max-w-4xl">
+    <h2>Welcome to the Witch Ink</h2>
+    <p>A journey through enchanted inks and wild imagination.  
+        In this realm, every tattoo tells a story whispered by ancient witches —  
+        symbols of power, mystery, and transformation.  
+        Let your skin become the canvas of a crazy, magical adventure.  
+        Dare to discover your next mark of destiny... </p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+
+    <div class="main_carrusel_container relative w-full max-w-4xl overflow-hidden">
+        <div id="carrusel" class="flex transition-transform duration-100 ease-in-out">
+        <img src="imagenes/carrusel1.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel2.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel3.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel4.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel5.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel6.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel7.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel8.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        <img src="imagenes/carrusel9.jpg" class="main_carrusel_img w-1/3 object-cover transition-all duration-700" />
+        </div>
+    </div>
+    <div id="particle-layer" class="particle-layer inset-0 pointer-events-none z-0 overflow-hidden"></div>
+</main>
+
+
+
 </body>
 </html>

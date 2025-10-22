@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="main.js" defer></script>
   </head>
@@ -86,11 +93,102 @@
         <p>Don't know exactly what you want to get tattooed?</p>
         <p>Leave it to fate...</p>
       </div>
-        <div class="sphere"><p id="tattoo" class="text-tat"></p></div>
-        <button id="generar" type="button" class="btn-discover">
-          Discover your Tattoo
-        </button>
-        <audio id="witch-sound" src="witch-noise.mp3" preload="auto"></audio>
+      <div class="sphere"><p id="tattoo" class="text-tat"></p></div>
+      <button id="generar" type="button" class="btn-discover">
+        Discover your Tattoo
+      </button>
+      <audio id="witch-sound" src="witch-noise.mp3" preload="auto"></audio>
     </div>
+
+    <!------------------------ FORM ---------------------->
+    <div class="flex justify-between form_body">
+      <div class="img">
+        <img src="imagenes/form_pic.jpg" alt="studio image" />
+      </div>
+
+      <form action="" class="flex flex-col justify-center">
+        <h1>WE GET WHAT YOU WANT!</h1>
+        <p>Fill the format to see our disgin.</p>
+
+        <div class="name_information information flex justify-between">
+          <div class="element">
+            <label for="firtNameInput">First name*</label>
+            <input
+              id="firtNameInput"
+              maxlength="100"
+              type="text"
+              placeholder="First name"
+            />
+          </div>
+          <div class="element">
+            <label for="lastNameInput">Last name*</label>
+            <input
+              id="lastNameInput"
+              maxlength="100"
+              type="text"
+              placeholder="Last name"
+            />
+          </div>
+        </div>
+
+        <div class="contact_information information flex justify-between">
+          <div class="element">
+            <label for="emailAddress">Email address*</label>
+            <input
+              id="emailAddress"
+              type="email"
+              placeholder="Emailaddress@example.com"
+            />
+          </div>
+          <div class="element">
+            <label for="phoneNumber">Phone number*</label>
+            <input id="phoneNumber" type="number" placeholder="Phone number" />
+          </div>
+        </div>
+
+        <textarea
+          name=""
+          id="optinal_text_input"
+          placeholder="Opcional text"
+        ></textarea>
+        <input
+          id="send_form_btn"
+          class="send-form"
+          type="submit"
+          value="SEND"
+        />
+      </form>
+    </div>
+    <!------------------------ FORM ---------------------->
+
+    <footer class="flex flex-col items-center">
+      <h1 class="font-semibold">Project developed by</h1>
+
+      <div class="team flex pt-3">
+        <div class="coworker flex items-center mr-5">
+          <h3 class="name">Eva</h3>
+          <div class="social_media">
+            <a class="my_ancore" href="https://www.linkedin.com/in/eva-torres-guerrero-a50517386/"><i class="fa-brands fa-square-linkedin"></i></a>
+            <a class="my_ancore" href="https://github.com/torresevag"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="coworker flex items-center mr-5">
+          <h3 class="name">Sebastian</h3>
+          <div class="social_media">
+            <a class="my_ancore" href="https://www.linkedin.com/in/sebastian-torres-developer/"><i class="fa-brands fa-square-linkedin"></i></a>
+            <a class="my_ancore" href="https://github.com/SebasWars"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+        <div class="coworker flex items-center mr-5">
+          <h3 class="name">Javier</h3>
+          <div class="social_media">
+            <a class="my_ancore" href="https://www.linkedin.com/in/javier-crespo-salinas-558b84385/"><i class="fa-brands fa-square-linkedin"></i></a>
+            <a class="my_ancore" href="https://github.com/Javier-Crespo-S"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

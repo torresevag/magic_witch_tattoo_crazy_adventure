@@ -9,17 +9,18 @@
 
 .form_body {
   width: 100%;
-  height: 650px;
+  height: auto;
   background-color: var(--background-color);
   color: var(--font-ligth-color);
-  padding: 1%;
+  padding: 2% 1%;
 }
 
 .form_body .img {
   width: 55%;
+  height: 100%;
   & img {
-    height: 100%;
     width: 100%;
+    height: 600px;
     object-fit: cover;
     border-radius: 1.5rem;
   }
@@ -49,16 +50,16 @@ form {
     border: 1px solid var(--font-ligth-color);
   }
 
-  .send-form{
+  .send-form {
     background-color: var(--button-tittle-color);
-    padding: .8rem;
-    border-radius: .3rem;
-    transition: .2s ease-in-out;
+    padding: 0.8rem;
+    border-radius: 0.3rem;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
     font-size: 1rem;
   }
 
-  .send-form:hover{
+  .send-form:hover {
     background-color: var(--hover-actions-color);
   }
 }
@@ -76,15 +77,31 @@ form {
       margin-top: 0.7rem;
       padding: 0.4rem 0.8rem;
       border-radius: 0.3rem;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }
 
-
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
+}
 
+@media (max-width: 900px) {
+  .form_body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form_body .img {
+    width: 95%;
+    height: auto;
+
+    img{
+      height: 400px;
+    }
+  }
+  form {
+    width: 100%;
+  }
 }

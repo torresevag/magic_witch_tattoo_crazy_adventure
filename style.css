@@ -12,20 +12,26 @@ body {
   font-family: "Cinzel Decorative", serif;
 }
 
-.header_menu{
+.header_menu {
   color: white;
   padding: 5px;
   border-bottom: 4px solid #4a1942;
 }
 
-.header_menu_list{
+.header_menu_list {
   font-size: 1.4rem;
   align-items: center;
+  a {
+    transition: 0.1s ease;
+  }
 }
 
 a:hover {
-  color:#893168
-  
+  color: #893168;
+}
+
+.contact_button_var{
+  display: none;
 }
 
 .main_carrusel_info {
@@ -85,8 +91,8 @@ a:hover {
 /*ESFERA*/
 
 .sphere {
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, #dc55a8, #2a0825 80%);
   animation: float 3s ease-in-out infinite;
@@ -236,7 +242,7 @@ footer {
 
   .coworker {
     font-size: 1rem;
-    transition: .2s ease;
+    transition: 0.2s ease;
     padding: 0.5rem 1rem;
     border-radius: 5rem;
     cursor: pointer;
@@ -245,12 +251,12 @@ footer {
       margin-left: 0.6rem;
     }
 
-    & .social_media a:hover{
+    & .social_media a:hover {
       color: var(--button-tittle-color);
     }
   }
 
-  .coworker:hover{
+  .coworker:hover {
     scale: 1.2;
     background-color: var(--hover-actions-color);
   }
@@ -286,6 +292,12 @@ input[type="number"]::-webkit-outer-spin-button {
 @media (prefers-reduced-motion: reduce) {
   #particle-layer {
     display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header_menu_list {
+    font-size: 1rem;
   }
 }
 

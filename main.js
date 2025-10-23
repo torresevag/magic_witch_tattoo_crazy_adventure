@@ -132,6 +132,7 @@ const BTN_GENERATOR = document.getElementById("generar");
 const SPHERE = document.getElementById("tattoo");
 const SEND_FORM_BTN = document.getElementById("send_form_btn");
 const ANCORES = document.querySelectorAll(".my_ancore");
+const CONTACT_BTN = document.querySelector('.contact_button_var');
 const BUTTON = document.getElementById("generar");
 const AUDIO = document.getElementById("witch-sound");
 
@@ -199,6 +200,7 @@ const showFormDisplay = () => {
 
   if (!isShow) {
     FORM_VALIDATION.style.display = "flex";
+    CONTACT_BTN.style.display = 'block'
   }
   FORM_VALIDATION.scrollIntoView({ behavior: "smooth" });
 };

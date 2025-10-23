@@ -12,6 +12,22 @@ body {
   font-family: "Cinzel Decorative", serif;
 }
 
+.header_menu{
+  color: white;
+  padding: 5px;
+  border-bottom: 4px solid #4a1942;
+}
+
+.header_menu_list{
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+a:hover {
+  color:#893168
+  
+}
+
 .main_carrusel_info {
   display: flex;
   flex-direction: column;

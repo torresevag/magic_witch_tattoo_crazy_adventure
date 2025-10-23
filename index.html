@@ -22,9 +22,19 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <main
-      class="main_carrusel flex flex-col items-center justify-center h-screen"
-    >
+
+    <header class="header_menu h-[15%] flex justify-between">
+      <img class="header_menu_logo h-24 mt-5 ml-15" src="imagenes/logo.jpeg" alt="logo"         
+          />
+      <ul class="header_menu_list flex justify-center mr-3 gap-8 w-[60%]">
+        <li><a href="#galery_anchor">Gallery</a></li>
+        <li><a href="#sphere_anchor">Destiny TATTOO</a></li>
+        <li><a href="#form_anchor">Contact</a></li>
+        <li><a href="#footer_anchor">About us</a></li>
+      </ul>
+
+    </header>
+    <main id="galery_anchor" class="main_carrusel flex flex-col items-center justify-center h-screen">
       <div class="main_carrusel_info relative w-full max-w-4xl">
         <h2>Welcome to the Witch Ink</h2>
         <p>
@@ -83,11 +93,11 @@
       </div>
       <div
         id="particle-layer"
-        class="particle-layer inset-0 pointer-events-none z-0 overflow-hidden"
+        class="particle-layer inset-0 pointer-events-none z-0 overflow-hidden w-auto"
       ></div>
     </main>
 
-    <div class="parte-eva">
+    <div id="sphere_anchor" class="parte-eva">
       <div class="text-esfera-info relative w-full max-w-4xl">
         <h2>Destiny TATTOO</h2>
         <p>Don't know exactly what you want to get tattooed?</p>
@@ -101,7 +111,7 @@
     </div>
 
     <!------------------------ FORM ---------------------->
-    <div class="flex justify-between form_body">
+    <div id="form_anchor" class="flex justify-between form_body">
       <div class="img">
         <img src="imagenes/form_pic.jpg" alt="studio image" />
       </div>
@@ -161,7 +171,7 @@
     </div>
     <!------------------------ FORM ---------------------->
 
-    <footer class="flex flex-col items-center">
+    <footer id="footer_anchor" class="flex flex-col items-center">
       <h1 class="font-semibold">Project developed by</h1>
 
       <div class="team flex pt-3">

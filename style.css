@@ -319,3 +319,18 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
   }
 }
+
+#particle-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999; 
+}
+.particle {
+  position: absolute;
+  will-change: transform;
+}
